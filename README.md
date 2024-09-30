@@ -1,29 +1,18 @@
-# HTTP Methods and Status Codes: A Detailed Guide
+## How HTTP Methods and Status Codes Interact in Spring
 
-## Introduction
+In a **Spring** application, HTTP methods map directly to controller methods, and the response status codes are usually handled automatically based on the outcome of the request.
 
-In modern web applications, **HTTP Methods** and **Status Codes** are fundamental concepts for communicating between clients (e.g., browsers or mobile apps) and servers. They form the basis of RESTful APIs, where each HTTP method performs a specific action, and status codes inform the client about the result of these actions.
+- **GET** requests typically return `200 OK` with data or `404 Not Found` if the resource doesn't exist.
+- **POST** requests may return `201 Created` when a new resource is successfully created or `400 Bad Request` if there’s an issue with the input.
+- **PUT** requests often result in `200 OK` or `204 No Content` for successful updates, and `404 Not Found` if the resource to update doesn’t exist.
+- **DELETE** requests can return `204 No Content` when successfully deleting a resource or `404 Not Found` if the resource doesn’t exist.
 
-In this article, we'll explore the various **HTTP Methods** and **Status Codes** in-depth and understand their use in **Spring** applications, without diving into code but focusing on their roles in web communication.
+Spring’s exception handling mechanism allows developers to customize the status codes returned in response to various application states, providing clarity and control over API interactions.
 
 ---
 
-## HTTP Methods
+## Conclusion
 
-HTTP methods define the type of operation you want to perform on a resource. They help structure the request in a meaningful way. Here’s an exhaustive list of methods you might encounter and their purposes:
+Understanding HTTP methods and status codes is key to building efficient and user-friendly REST APIs. Each HTTP method serves a specific purpose, and each status code gives the client feedback on what happened with their request.
 
-### 1. **GET**
-   - **Purpose**: Retrieve information (read-only).
-   - **Use Case**: Fetch a list of products, get details of a single user.
-   - **Idempotent**: Yes.
-   - **Safe**: Yes (does not modify the resource).
-
-   **Spring Context**: GET is the most commonly used method, especially for APIs returning resources to be viewed or consumed.
-
-### 2. **POST**
-   - **Purpose**: Submit data to the server to create a new resource.
-   - **Use Case**: Creating a new blog post, registering a new user.
-   - **Idempotent**: No.
-   - **Safe**: No (modifies server state).
-
-   **Spring Context**: Often used in form submissions or when creating new resources.
+In **Spring applications**, these methods and status codes work together seamlessly, allowing for clear, predictable communication between clients and servers. Knowing how and when to use them leads to well-structured, intuitive APIs that provide meaningful information to both developers and users.
