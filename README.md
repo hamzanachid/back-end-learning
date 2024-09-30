@@ -1,5 +1,28 @@
 # HTTP Methods and Status Codes: A Detailed Guide
 
+## Table of Contents
+1. [Introduction](#introduction)
+2. [HTTP Methods](#http-methods)
+   - [GET](#get)
+   - [POST](#post)
+   - [PUT](#put)
+   - [PATCH](#patch)
+   - [DELETE](#delete)
+   - [OPTIONS](#options)
+   - [HEAD](#head)
+   - [TRACE](#trace)
+   - [CONNECT](#connect)
+3. [HTTP Status Codes](#http-status-codes)
+   - [1xx: Informational](#1xx-informational)
+   - [2xx: Success](#2xx-success)
+   - [3xx: Redirection](#3xx-redirection)
+   - [4xx: Client Errors](#4xx-client-errors)
+   - [5xx: Server Errors](#5xx-server-errors)
+4. [How HTTP Methods and Status Codes Interact in Spring](#how-http-methods-and-status-codes-interact-in-spring)
+5. [Conclusion](#conclusion)
+
+---
+
 ## Introduction
 In modern web applications, HTTP Methods and Status Codes are fundamental concepts for communicating between clients (e.g., browsers or mobile apps) and servers. They form the basis of RESTful APIs, where each HTTP method performs a specific action, and status codes inform the client about the result of these actions.
 
