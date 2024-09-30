@@ -1,1 +1,25 @@
-# back-end-learning
+# Backend Topics to Explore (Using Spring Boot)
+
+- **HTTP Methods and Status Codes**
+- **RESTful API Design**
+- **CRUD Operations**
+- **Authentication** (Basic, Token-based)
+- **Session Management**
+- **Data Validation and Sanitization**
+- **Pagination and Filtering**
+- **Database Relationships** 
+  - One-to-One
+  - One-to-Many
+  - Many-to-Many
+- **File Upload/Download Handling**
+- **Error Handling and Custom Exceptions**
+- **Logging and Monitoring**
+- **API Versioning**
+- **Caching Strategies**
+- **Rate Limiting**
+- **Message Queues** (RabbitMQ, Kafka)
+- **Event-Driven Architecture**
+- **WebSockets and Real-time Communication**
+- **Microservices Architecture**
+- **Distributed Transactions**
+- **Database Sharding and Partitioning**
